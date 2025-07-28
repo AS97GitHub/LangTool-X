@@ -39,14 +39,14 @@ python3 langtool_x.py --extract -d language0.dat -b languages.bed -t language0.t
 Extract with original text reference:
 ```sh
 # Windows
-python langtool_x.py --extract --dat language0.dat --bed languages.bed --txt language0.txt --original-d language0.dat
+python langtool_x.py --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
 # or with short options:
-python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt -od language0.dat
+python langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
 
 # Linux
-python3 langtool_x.py --extract --dat language0.dat --bed languages.bed --txt language0.txt --original-d language0.dat
+python3 langtool_x.py --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
 # or with short options:
-python3 langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt -od language0.dat
+python3 langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
 ```
 
 Convert `.txt` file back to `.dat`:
@@ -112,7 +112,7 @@ chmod +x ./dist/langtool_x  # if needed
 ## Project Structure
 
 ```
-langtool/Source/
+LangTool X/Source/
   ├── langtool_x.py 
   └── modules/
         ├── convert.py
