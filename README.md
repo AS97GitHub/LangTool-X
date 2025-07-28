@@ -1,4 +1,4 @@
-# LangTool X for FlatOut, FlatOut 2, FlatOut: Ultimate Carnage, and FlatOut: Head On
+# LangTool X for FlatOut, FlatOut 2, FlatOut: Ultimate Carnage and FlatOut: Head On
 
 A command-line tool for extracting and converting language files used in FlatOut 2, FlatOut: Ultimate Carnage, and FlatOut: Head On.
 
