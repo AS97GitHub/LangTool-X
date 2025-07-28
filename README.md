@@ -9,7 +9,7 @@ LangTool X is designed for modders, translators, and enthusiasts working with th
 - Convert edited `.txt` files back into `.dat`.
 - Map string IDs to human-readable names using `.bed` files.
 - Validate the structure of language files.
-- **NEW:** Extract with original text reference using `--original-d` option.
+- Extract with original text reference using `--original-d` option.
 
 ## Features
 
