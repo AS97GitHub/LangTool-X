@@ -124,7 +124,7 @@ langtool/Source/
 
 ## License
 
-MIT License. See [LICENSE](../LICENSE).
+MIT License. See [LICENSE]([../LICENSE](https://github.com/AS97GitHub/LangTool-X?tab=MIT-1-ov-file#readme)).
 
 ## Credits
 
