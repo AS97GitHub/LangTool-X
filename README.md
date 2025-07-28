@@ -124,7 +124,7 @@ langtool/Source/
 
 ## License
 
-MIT License. See [LICENSE](../LICENSE).
+MIT License. See [LICENSE](LICENSE).
 
 ## Credits
 
