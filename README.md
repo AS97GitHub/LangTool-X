@@ -1,10 +1,10 @@
 # LangTool X for FlatOut Series and Sega Rally Revo (PSP)
 
-A command-line tool for extracting and converting language files used in FlatOut, FlatOut 2, FlatOut: Ultimate Carnage and FlatOut: Head On.
+A command-line tool for extracting and converting language files used in FlatOut, FlatOut 2, FlatOut: Ultimate Carnage, FlatOut: Head On and Sega Rally Revo (PSP).
 
 ## About
 
-LangTool X is designed for modders, translators, and enthusiasts working with the language files of FlatOut, FlatOut 2, FlatOut: Ultimate Carnage and FlatOut: Head On. The game stores all in-game text in binary `.dat` files, which are not human-readable and cannot be edited directly. LangTool X allows you to:
+LangTool X is designed for modders, translators, and enthusiasts working with the language files of FlatOut, FlatOut 2, FlatOut: Ultimate Carnage, FlatOut: Head On and Sega Rally Revo (PSP). The game stores all in-game text in binary `.dat` files, which are not human-readable and cannot be edited directly. LangTool X allows you to:
 - Extract all text strings from `.dat` files into a plain `.txt` format.
 - Convert edited `.txt` files back into `.dat`.
 - Map string IDs to human-readable names using `.bed` files.
