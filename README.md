@@ -129,7 +129,7 @@ MIT License. See [LICENSE](LICENSE).
 ## Credits
 
 - Developed by AS97.
-- **Inspired by the original "FO2 LangTool" developed by Burs using Delphi 7.**
+- **Inspired by the original "FO2 LangTool" developed by Burs.**
 - **This Python version was developed in the [Cursor](https://www.cursor.so/) editor with the help of AI assistants: ChatGPT and Claude.**
 
 *Feel free to contribute or report issues via GitHub!*
