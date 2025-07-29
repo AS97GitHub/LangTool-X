@@ -130,7 +130,6 @@ MIT License. See [LICENSE](LICENSE).
 
 - Developed by AS97.
 - **Inspired by the original "FO2 LangTool" developed by Burs using Delphi 7.**
-- Also inspired by the FlatOut modding and translation community.
 - **This Python version was developed in the [Cursor](https://www.cursor.so/) editor with the help of AI assistants: ChatGPT and Claude.**
 
 *Feel free to contribute or report issues via GitHub!*
