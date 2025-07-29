@@ -1,4 +1,4 @@
-# LangTool X for FlatOut, FlatOut 2, FlatOut: Ultimate Carnage and FlatOut: Head On
+# LangTool X for FlatOut Series and Sega Rally Revo (PSP)
 
 A command-line tool for extracting and converting language files used in FlatOut, FlatOut 2, FlatOut: Ultimate Carnage and FlatOut: Head On.
 
