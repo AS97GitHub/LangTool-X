@@ -42,7 +42,6 @@ Options:
   --txt, -t            Path to .txt file (input or output)
   --out, -o            Output .dat file (for --convert)
   --original-d, -od    Path to original .dat file (for --extract, outputs original text as //...//)
-  --help, -h           Show this help message
 
 Examples:
   {executable_name} --extract --dat language0.dat --bed languages.bed --txt language0.txt
@@ -57,7 +56,7 @@ def main():
     Main entry point: parse CLI arguments and run the requested action.
     """
     args = sys.argv[1:]
-    if not args or '--help' in args or '-h' in args:
+    if not args:
         print_usage()
         return
     action = None
@@ -110,34 +109,27 @@ def main():
                 print("Error: Missing value for --original-d/-od")
                 return
         else:
-            print(f"Error: Unknown argument '{args[i]}'\nUse --help to see available options.")
-            exit_with_pause()
+            print(f"Error: Unknown argument '{args[i]}'")
             return
     if not action:
-        print("Error: Must specify --extract or --convert\nUse --help to see usage.")
-        exit_with_pause()
+        print("Error: Must specify --extract or --convert")
         return
     if action == 'extract':
         if not all([dat_path, bed_path, txt_path]):
-            print("Error: Missing required arguments for extraction.\nRequired: --dat input.dat --bed input.bed --txt output.txt\nUse --help for details.")
-            exit_with_pause()
+            print("Error: Missing required arguments for extraction.\nRequired: --dat input.dat --bed input.bed --txt output.txt")
             return
     else:  # action == 'convert'
         if not all([dat_path, bed_path, txt_path, out_path]):
-            print("Error: Missing required arguments for conversion.\nRequired: --dat input.dat --bed input.bed --txt input.txt --out output.dat\nUse --help for details.")
-            exit_with_pause()
+            print("Error: Missing required arguments for conversion.\nRequired: --dat input.dat --bed input.bed --txt input.txt --out output.dat")
             return
     if not os.path.exists(dat_path):
-        print(f"Error: File {dat_path} not found.\nUse --help for usage info.")
-        exit_with_pause()
+        print(f"Error: File {dat_path} not found.")
         return
     if not os.path.exists(bed_path):
-        print(f"Error: File {bed_path} not found.\nUse --help for usage info.")
-        exit_with_pause()
+        print(f"Error: File {bed_path} not found.")
         return
     if action == 'convert' and not os.path.exists(txt_path):
-        print(f"Error: File {txt_path} not found.\nUse --help for usage info.")
-        exit_with_pause()
+        print(f"Error: File {txt_path} not found.")
         return
     if action == 'extract':
         if extract_strings(dat_path, bed_path, txt_path, original_dat_path=original_dat_path):
@@ -149,9 +141,6 @@ def main():
             print(f"Text successfully converted to {out_path}")
         else:
             print("An error occurred while converting text")
-    
-    # Pause to keep window open when double-clicked
-    exit_with_pause()
 
 if __name__ == "__main__":
     main() 
