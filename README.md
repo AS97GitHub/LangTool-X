@@ -112,7 +112,7 @@ chmod +x ./dist/langtool_x  # if needed
 ## Project Structure
 
 ```
-LangTool X/Source/
+LangTool_X/Source/
     ├── langtool_x.py 
     └── modules/
         ├── convert.py
