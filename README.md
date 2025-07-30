@@ -113,8 +113,8 @@ chmod +x ./dist/langtool_x  # if needed
 
 ```
 LangTool X/Source/
-  ├── langtool_x.py 
-  └── modules/
+    ├── langtool_x.py 
+    └── modules/
         ├── convert.py
         ├── datfile.py
         ├── extract.py
