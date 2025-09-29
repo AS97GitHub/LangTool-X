@@ -93,21 +93,30 @@ The original text (between `//...//`) is automatically ignored when converting b
 
 You can build a standalone `.exe` using [PyInstaller](https://pyinstaller.org/):
 
-Build .exe:
-```sh
+```cmd
 pip install pyinstaller
 pyinstaller --onefile langtool_x.py
-/dist/langtool_x.exe
 ```
 
-### Linux
+The compiled executable will be located in `dist\langtool_x.exe`
+
+**Optional flags:**
+- `--icon=icon.ico` - add custom icon
+- `--name=LangToolX` - custom executable name
+
+> **Note:** Some antivirus software may flag PyInstaller executables as false positives.
+
+### Linux / macOS
 
 Build executable:
-```sh
+
+```bash
 pip3 install pyinstaller
 pyinstaller --onefile langtool_x.py
 chmod +x ./dist/langtool_x  # if needed
 ```
+
+The compiled binary will be located in `./dist/langtool_x`
 
 ## Project Structure
 
