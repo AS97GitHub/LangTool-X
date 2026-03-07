@@ -11,6 +11,16 @@ LangTool X is designed for modders, translators, and enthusiasts working with th
 - Validate the structure of language files.
 - Extract with original text reference using `--original-d` option.
 
+## Supported Games
+
+LangTool X supports language files from the following games:
+
+- FlatOut
+- FlatOut 2
+- FlatOut: Ultimate Carnage
+- FlatOut: Head On
+- Sega Rally Revo (PSP)
+
 ## Features
 
 - Cross-platform: works on Windows and Linux
