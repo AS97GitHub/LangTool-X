@@ -115,19 +115,24 @@ Lines like:
 must remain unchanged. They are used to map strings back to the correct positions in the `.dat` file.
 
 2. **Do not remove `{LF}` tags**
+
 `{LF}` represents a line break inside the original string. Removing or changing it may break text formatting in the game.
 
 3. **Do not remove empty blocks**
+
 If a block contains `{EMPTY}`, keep it unless you intentionally want to add text.
 
 4. **Original text (`//...//`) is ignored**
+
 Lines between `// ... //` are reference text when using `--original-d`.
 They are **not included** when converting the file back to `.dat`.
 
 5. **Do not change the order of blocks**
+
 Strings must remain in the same order as in the extracted file.
 
 6. **Encoding**
+
 The `.txt` file must remain **UTF-8 encoded**.
 
 Following these rules ensures that the file can be converted back to `.dat` without errors.
