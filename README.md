@@ -115,7 +115,6 @@ Lines like:
 must remain unchanged. They are used to map strings back to the correct positions in the `.dat` file.
 
 **2. Do not remove `{LF}` tags**
-
 `{LF}` represents a line break inside the original string. Removing or changing it may break text formatting in the game.
 
 **3. Do not remove empty blocks**
