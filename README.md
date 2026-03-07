@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" width="300">
+  <img src="logo2.png" width="300">
 </p>
 
 ### <p align="center">A command-line tool for extracting and converting game language files stored in binary `.dat` format.</p>
