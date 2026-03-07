@@ -1,5 +1,5 @@
 # LangTool X
-
+![Logo](icon.ico)
 
 A command-line tool for extracting and converting game language files stored in binary `.dat` format.
 
