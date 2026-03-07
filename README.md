@@ -15,6 +15,7 @@ LangTool X is designed for modders, translators, and enthusiasts working with th
 
 - Cross-platform: works on Windows and Linux
 - Tested on Windows 10, Ubuntu 24.04, and Debian 12
+- macOS support is untested, but the program has no external dependencies and is expected to work
 - Both CLI and standalone `.exe` (via PyInstaller)
 - Diagnostics and validation
 - Short and long command-line options
