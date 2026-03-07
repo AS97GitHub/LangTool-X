@@ -2,7 +2,7 @@
   <img src="logo.png" width="300">
 </p>
 
-### A command-line tool for extracting and converting game language files stored in binary `.dat` format.
+### <p align="center">A command-line tool for extracting and converting game language files stored in binary `.dat` format.</p>
 
 ## About
 LangTool X is designed for modders, translators, and enthusiasts working with language files from several racing games. These games store in-game text in binary `.dat` files, which are not human-readable and cannot be edited directly.
