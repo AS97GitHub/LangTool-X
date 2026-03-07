@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A command-line tool for extracting and converting game language files stored in binary `.dat` format.
+<strong>A command-line tool for extracting and converting game language files stored in binary `.dat` format.</strong>
 </p>
 
 ## About
