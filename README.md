@@ -86,6 +86,52 @@ Please try again later.//
 
 The original text (between `//...//`) is automatically ignored when converting back to `.dat`.
 
+## Special Tags
+
+LangTool X uses several special tags in the `.txt` output format. These tags must be preserved when editing translation files.
+
+- `{LF}` — Line break.  
+  Used to represent a newline inside a string stored in the `.dat` file.
+- `{EMPTY}` — Empty string.  
+  Indicates that the string block in the `.dat` file contains no text.
+- `{INVALID}` — Invalid or placeholder string.  
+  Used internally when a string block cannot be interpreted correctly.
+- `// ... //` — Original text reference.  
+  When using the `--original-d` option, the original string from another `.dat` file is written between `//` markers.  
+  This text is **ignored** when converting `.txt` back to `.dat` and is provided only as a reference for translators.
+
+## Translation Rules
+
+When editing extracted `.txt` files, follow these rules to avoid breaking the structure of the `.dat` file.
+
+1. **Do not modify block headers**
+
+Lines like:
+
+```
+[String ID: 31] [PS2_DNAS2_SS_SERVER_BUSY]
+```
+
+must remain unchanged. They are used to map strings back to the correct positions in the `.dat` file.
+
+2. **Do not remove `{LF}` tags**
+`{LF}` represents a line break inside the original string. Removing or changing it may break text formatting in the game.
+
+3. **Do not remove empty blocks**
+If a block contains `{EMPTY}`, keep it unless you intentionally want to add text.
+
+4. **Original text (`//...//`) is ignored**
+Lines between `// ... //` are reference text when using `--original-d`.
+They are **not included** when converting the file back to `.dat`.
+
+5. **Do not change the order of blocks**
+Strings must remain in the same order as in the extracted file.
+
+6. **Encoding**
+The `.txt` file must remain **UTF-8 encoded**.
+
+Following these rules ensures that the file can be converted back to `.dat` without errors.
+
 ## Building
 
 **Requirements:** Python 3.6 or newer
