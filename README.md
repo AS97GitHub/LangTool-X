@@ -104,7 +104,7 @@ LangTool X uses several special tags in the `.txt` output format. These tags mus
 
 When editing extracted `.txt` files, follow these rules to avoid breaking the structure of the `.dat` file.
 
-1. **Do not modify block headers**
+**1. Do not modify block headers**
 
 Lines like:
 
