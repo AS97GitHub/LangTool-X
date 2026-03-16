@@ -28,11 +28,11 @@ langtool_x.exe --extract -d language0.dat -b languages.bed -t language0.txt
 ```
 ### Convert
 
-#### Using Python:
+#### Python script:
 ```sh
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
-#### Using Executable:
+#### Windows executable:
 ```sh
 langtool_x.exe --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
