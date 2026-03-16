@@ -83,7 +83,7 @@ Or using short options:
 python langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
 ```
 
-#### Convert edited `.txt` back to `.dat`:
+#### Convert edited `.txt` back to `.dat`
 ```sh
 python langtool_x.py --convert --dat language0.dat --bed languages.bed --txt language0.txt --out new_language0.dat
 ```
@@ -92,7 +92,7 @@ Or using short options:
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
 
-### Running the Windows .exe
+### Running the Windows `.exe`:
 
 > If you downloaded the pre-built executable `langtool_x.exe`.
 
