@@ -14,9 +14,19 @@ LangTool X allows you to:
 - Validate the structure of language files.
 - Extract with original text reference using `--original-d` option.
 
+## Quick example
+#### Extract
+```sh
+python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
+```
+#### Convert
+```sh
+python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
+```
+
 ## Supported Games
 
-LangTool X supports language files from the following games:
+LangTool X supports language files from these games:
 
 - FlatOut
 - FlatOut 2
@@ -26,55 +36,45 @@ LangTool X supports language files from the following games:
 
 ## Features
 
-- Cross-platform: works on Windows and Linux
+- Cross-platform CLI tool
 - Tested on Windows 10, Ubuntu 24.04, and Debian 12
-- macOS support is untested, but the program has no external dependencies and is expected to work
-- Both CLI and standalone `.exe` (via PyInstaller)
-- Diagnostics and validation
-- Short and long command-line options
-- Original text reference for translation assistance
+- macOS support is untested, but the program has no external dependencies and should work.
+- No external dependencies
+- Long and short command-line options
+- Validation and diagnostics
 
 ## Usage
 
 > On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
 
-Extract strings from a `.dat` file:
+> On Linux/macOS you may need to use `python3`.
+
+### Extract strings from `.dat` to `.txt`:
+
 ```sh
-# Windows
 python langtool_x.py --extract --dat language0.dat --bed languages.bed --txt language0.txt
-# or with short options:
+```
+#### or with short options:
+```sh
 python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
-
-# Linux
-python3 langtool_x.py --extract --dat language0.dat --bed languages.bed --txt language0.txt
-# or with short options:
-python3 langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
 ```
 
-Extract with original text reference:
+### Extract with original text reference:
 ```sh
-# Windows
 python langtool_x.py --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
-# or with short options:
+```
+#### or with short options:
+```sh
 python langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
-
-# Linux
-python3 langtool_x.py --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
-# or with short options:
-python3 langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
 ```
 
-Convert `.txt` file back to `.dat`:
+### Convert edited `.txt` back to `.dat`:
 ```sh
-# Windows
 python langtool_x.py --convert --dat language0.dat --bed languages.bed --txt language0.txt --out new_language0.dat
-# or with short options:
+```
+#### or with short options:
+```sh
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
-
-# Linux
-python3 langtool_x.py --convert --dat language0.dat --bed languages.bed --txt language0.txt --out new_language0.dat
-# or with short options:
-python3 langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
 
 ## Command-Line Options
@@ -201,6 +201,6 @@ LangTool_X/Source/
 
 - Developed by AS97.
 - **Inspired by the original "FO2 LangTool" developed by Burs.**
-- **This Python version was developed in the [Cursor](https://www.cursor.so/) editor with the help of AI assistants: ChatGPT and Claude.**
+- **Developed using the [Cursor](https://www.cursor.so/) editor with assistance from AI tools such as ChatGPT and Claude.**
 
 *Feel free to contribute or report issues via GitHub!*
