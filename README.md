@@ -37,9 +37,9 @@ LangTool X supports language files from these games:
 ## Features
 
 - Cross-platform CLI tool
-- Tested on Windows 10, Ubuntu 24.04, and Debian 12
-- macOS support is untested, but the program has no external dependencies and should work.
 - No external dependencies
+- Tested on Windows 10, Ubuntu 24.04, and Debian 12
+- macOS support is untested but expected to work
 - Long and short command-line options
 - Validation and diagnostics
 
@@ -47,23 +47,23 @@ LangTool X supports language files from these games:
 
 > On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
 
-> On Linux/macOS you may need to use `python3`.
+> On Linux/macOS you may need to use `python3` instead of `python`.
 
 ### Extract strings from `.dat` to `.txt`:
 
 ```sh
 python langtool_x.py --extract --dat language0.dat --bed languages.bed --txt language0.txt
 ```
-#### or with short options:
+Or using short options:
 ```sh
 python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
 ```
 
-### Extract with original text reference:
+### Extract with original text reference (`--original-d` / `-od`):
 ```sh
 python langtool_x.py --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
 ```
-#### or with short options:
+Or using short options:
 ```sh
 python langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
 ```
@@ -72,7 +72,7 @@ python langtool_x.py --extract -d language5.dat -b languages.bed -t language5.tx
 ```sh
 python langtool_x.py --convert --dat language0.dat --bed languages.bed --txt language0.txt --out new_language0.dat
 ```
-#### or with short options:
+Or using short options:
 ```sh
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
