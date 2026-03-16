@@ -15,13 +15,26 @@ LangTool X allows you to:
 - Extract with original text reference using `--original-d` option.
 
 ## Quick example
-#### Extract
+
+### Extract
+
+#### Using Python:
 ```sh
 python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
 ```
-#### Convert
+#### Using Executable:
+```sh
+langtool_x.exe --extract -d language0.dat -b languages.bed -t language0.txt
+```
+### Convert
+
+#### Using Python:
 ```sh
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
+```
+#### Using Executable:
+```sh
+langtool_x.exe --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
 
 ## Supported Games
@@ -45,11 +58,13 @@ LangTool X supports language files from these games:
 
 ## Usage
 
+### Running the Python script
+
 > On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
 
 > On Linux/macOS you may need to use `python3` instead of `python`.
 
-### Extract strings from `.dat` to `.txt`:
+#### Extract strings from `.dat` to `.txt`:
 
 ```sh
 python langtool_x.py --extract --dat language0.dat --bed languages.bed --txt language0.txt
@@ -59,7 +74,7 @@ Or using short options:
 python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
 ```
 
-### Extract with original text reference (`--original-d` / `-od`):
+#### Extract with original text reference (`--original-d` / `-od`):
 ```sh
 python langtool_x.py --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
 ```
@@ -68,13 +83,44 @@ Or using short options:
 python langtool_x.py --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
 ```
 
-### Convert edited `.txt` back to `.dat`:
+#### Convert edited `.txt` back to `.dat`:
 ```sh
 python langtool_x.py --convert --dat language0.dat --bed languages.bed --txt language0.txt --out new_language0.dat
 ```
 Or using short options:
 ```sh
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
+```
+
+### Running the Windows .exe
+
+> If you downloaded the pre-built executable `langtool_x.exe`.
+
+#### Extract strings from `.dat` to `.txt`:
+```sh
+langtool_x.exe --extract --dat language0.dat --bed languages.bed --txt language0.txt
+```
+Or using short options:
+```sh
+langtool_x.exe --extract -d language0.dat -b languages.bed -t language0.txt
+```
+
+#### Extract with original text reference (`--original-d` / `-od`):
+```sh
+langtool_x.exe --extract --dat language5.dat --bed languages.bed --txt language5.txt --original-d language0.dat
+```
+Or using short options:
+```sh
+langtool_x.exe --extract -d language5.dat -b languages.bed -t language5.txt -od language0.dat
+```
+
+#### Convert edited `.txt` back to `.dat`:
+```sh
+langtool_x.exe --convert --dat language0.dat --bed languages.bed --txt language0.txt --out new_language0.dat
+```
+Or using short options:
+```sh
+langtool_x.exe --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
 
 ## Command-Line Options
