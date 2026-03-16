@@ -18,11 +18,11 @@ LangTool X allows you to:
 
 ### Extract
 
-#### Using Python:
+#### Python script:
 ```sh
 python langtool_x.py --extract -d language0.dat -b languages.bed -t language0.txt
 ```
-#### Using Executable:
+#### Windows executable:
 ```sh
 langtool_x.exe --extract -d language0.dat -b languages.bed -t language0.txt
 ```
@@ -58,7 +58,7 @@ LangTool X supports language files from these games:
 
 ## Usage
 
-### Running the Python script
+### Python script
 
 > On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
 
@@ -92,7 +92,7 @@ Or using short options:
 python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.txt -o new_language0.dat
 ```
 
-### Running the Windows `.exe`:
+### Windows executable
 
 > If you downloaded the pre-built executable `langtool_x.exe`.
 
