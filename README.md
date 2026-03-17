@@ -49,7 +49,6 @@ LangTool X supports language files from these games:
 
 ## Tested Platforms
 - Tested on Windows 10, Ubuntu 24.04, and Debian 12
-- macOS support is untested
 
 ## Features
 
@@ -66,7 +65,7 @@ LangTool X supports language files from these games:
 
 > ⚠️ On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
 
-> ⚠️ On Linux/macOS you may need to use `python3` instead of `python`.
+> ⚠️ On Linux you may need to use `python3` instead of `python`.
 
 #### Extract strings from `.dat` to `.txt`:
 
@@ -222,7 +221,7 @@ The compiled executable will be located in `dist\langtool_x.exe`
 
 > ⚠️ **Note:** Some antivirus software may flag PyInstaller executables as false positives.
 
-### Linux / macOS
+### Linux
 
 Build executable:
 
