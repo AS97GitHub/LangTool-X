@@ -12,7 +12,6 @@ LangTool X allows you to:
 - Convert edited `.txt` files back into `.dat` using the original `.dat` as a base.
 - Process string IDs using a `.bed` file (required for all operations).
 - Validate language file structure during processing.
-- Extract with original text reference using `--original-d` option.
 - Extract with original text reference from another .dat file using `--original-d` option.
 
 ## Quick example
@@ -61,7 +60,7 @@ LangTool X supports language files from these games:
 
 ## Usage
 
-> ⚠️ All arguments (`--dat`, `--bed`, `--txt` or `-d`, `-b`, `t`) are required.
+> ⚠️ All arguments (`--dat`, `--bed`, `--txt` / `-d`, `-b`, `-t`) are required.
 
 ### Python script
 
