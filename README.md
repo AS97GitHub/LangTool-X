@@ -47,12 +47,14 @@ LangTool X supports language files from these games:
 - FlatOut: Head On
 - Sega Rally Revo (PSP)
 
+## Tested Platforms
+- Tested on Windows 10, Ubuntu 24.04, and Debian 12
+- macOS support is untested but expected to work
+
 ## Features
 
 - Cross-platform CLI tool
 - No external dependencies
-- Tested on Windows 10, Ubuntu 24.04, and Debian 12
-- macOS support is untested but expected to work
 - Long and short command-line options
 - Validation and diagnostics
 
