@@ -220,7 +220,7 @@ The compiled executable will be located in `dist\langtool_x.exe`
 - `--icon=icon.ico` - add custom icon
 - `--name=LangToolX` - custom executable name
 
-> **Note:** Some antivirus software may flag PyInstaller executables as false positives.
+> ⚠️ **Note:** Some antivirus software may flag PyInstaller executables as false positives.
 
 ### Linux / macOS
 
