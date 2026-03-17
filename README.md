@@ -8,11 +8,12 @@
 LangTool X is designed for modders, translators, and enthusiasts working with language files from several racing games. These games store in-game text in binary `.dat` files, which are not human-readable and cannot be edited directly.
 
 LangTool X allows you to:
-- Extract all text strings from `.dat` files into a plain `.txt` format.
+- Extract text strings from `.dat` files into a plain `.txt` format.
 - Convert edited `.txt` files back into `.dat` using the original `.dat` as a base.
 - Process string IDs using a `.bed` file (required for all operations).
-- Validate the structure of language files.
+- Validate language file structure during processing.
 - Extract with original text reference using `--original-d` option.
+- Extract with original text reference from another .dat file using `--original-d` option.
 
 ## Quick example
 
@@ -49,18 +50,18 @@ LangTool X supports language files from these games:
 
 ## Tested Platforms
 - Tested on Windows 10, Ubuntu 24.04, and Debian 12
-- macOS support is untested but expected to work
+- macOS support is untested
 
 ## Features
 
 - Cross-platform CLI tool
-- No external dependencies
+- No third-party Python dependencies.
 - Long and short command-line options
 - Validation and diagnostics
 
 ## Usage
 
-> ⚠️ A `.bed` file is required for both extraction and conversion.
+> ⚠️ All arguments (`--dat`, `--bed`, `--txt` or `-d`, `-b`, `t`) are required.
 
 ### Python script
 
