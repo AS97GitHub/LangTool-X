@@ -9,8 +9,8 @@ LangTool X is designed for modders, translators, and enthusiasts working with la
 
 LangTool X allows you to:
 - Extract all text strings from `.dat` files into a plain `.txt` format.
-- Convert edited `.txt` files back into `.dat`.
-- Uses a `.bed` file to resolve and process string IDs (required for all operations).
+- Convert edited `.txt` files back into `.dat` using the original `.dat` as a base.
+- Process string IDs using a `.bed` file (required for all operations).
 - Validate the structure of language files.
 - Extract with original text reference using `--original-d` option.
 
