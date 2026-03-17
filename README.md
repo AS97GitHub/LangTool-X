@@ -10,7 +10,7 @@ LangTool X is designed for modders, translators, and enthusiasts working with la
 LangTool X allows you to:
 - Extract all text strings from `.dat` files into a plain `.txt` format.
 - Convert edited `.txt` files back into `.dat`.
-- Map string IDs to human-readable names using `.bed` files.
+- Requires a `.bed` file to map string IDs to human-readable names.
 - Validate the structure of language files.
 - Extract with original text reference using `--original-d` option.
 
@@ -60,11 +60,13 @@ LangTool X supports language files from these games:
 
 ## Usage
 
+> ⚠️ A `.bed` file is required for both extraction and conversion.
+
 ### Python script
 
-> On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
+> ⚠️ On Windows, you can use either `python` or `py` to run the script, depending on your Python installation.
 
-> On Linux/macOS you may need to use `python3` instead of `python`.
+> ⚠️ On Linux/macOS you may need to use `python3` instead of `python`.
 
 #### Extract strings from `.dat` to `.txt`:
 
@@ -96,7 +98,7 @@ python langtool_x.py --convert -d language0.dat -b languages.bed -t language0.tx
 
 ### Windows executable
 
-> If you downloaded the pre-built executable `langtool_x.exe`.
+> ⚠️ If you downloaded the pre-built executable `langtool_x.exe`.
 
 #### Extract strings from `.dat` to `.txt`:
 ```sh
