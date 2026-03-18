@@ -9,7 +9,7 @@ from modules.utils import read_languages_from_ini, get_language_name, read_bed_f
 from modules.datfile import read_dat_header, write_dat_file_table, validate_dat_structure
 from modules.txtblock import parse_text_block
 
-def convert_to_dat(txt_path, input_dat_path, output_dat_path, bed_path=None, mode='table'):
+def convert_to_dat(txt_path, input_dat_path, output_dat_path, bed_path, mode='table'):
     """
     Converts .txt file back to .dat format.
     Performs validation and outputs diagnostics.
@@ -43,8 +43,6 @@ def convert_to_dat(txt_path, input_dat_path, output_dat_path, bed_path=None, mod
                 msg = f"WARNING: Number of blocks in .txt ({len(blocks)}) and .dat ({str_num}) do not match!"
                 print(msg)
                 logging.warning(msg)
-        if bed_path is None:
-            bed_path = os.path.join(os.path.dirname(input_dat_path), 'languages.bed')
         if os.path.exists(bed_path):
             string_ids, expected_blocks = read_bed_file(bed_path)
             if len(blocks) != len(string_ids):
