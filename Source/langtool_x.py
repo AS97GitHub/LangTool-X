@@ -137,7 +137,7 @@ def main():
         else:
             print("An error occurred while extracting text")
     else:  # action == 'convert'
-        if convert_to_dat(txt_path, dat_path, out_path, bed_path=bed_path):
+        if convert_to_dat(txt_path, dat_path, out_path, bed_path):
             print(f"Text successfully converted to {out_path}")
         else:
             print("An error occurred while converting text")
