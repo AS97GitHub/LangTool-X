@@ -246,6 +246,9 @@ LangTool_X/Source/
         └── utils.py
 ```
 
+## License
+MIT License. See [LICENSE](LICENSE).
+
 ## Credits
 
 - Developed by AS97.
