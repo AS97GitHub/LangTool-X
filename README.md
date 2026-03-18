@@ -128,12 +128,13 @@ langtool_x.exe --convert -d language0.dat -b languages.bed -t language0.txt -o n
 
 ## Command-Line Options
 
-- `--extract` / `--convert` — Select extraction or conversion mode
+- `--extract` — Extract text from `.dat` to `.txt`
+- `--convert` — Convert `.txt` back to `.dat`
 - `--dat`, `-d` — Path to the `.dat` file
 - `--bed`, `-b` — Path to the `.bed` file
 - `--txt`, `-t` — Path to the `.txt` file (input or output)
-- `--out`, `-o` — Output `.dat` file (for conversion)
-- `--original-d`, `-od` — Path to original `.dat` file (for extraction, outputs original text as `//...//`)
+- `--out`, `-o` — Output `.dat` file (for `--convert`)
+- `--original-d`, `-od` — Path to original `.dat` file (for `--extract`, outputs original text as `//...//`)
 
 ## Output Format
 
