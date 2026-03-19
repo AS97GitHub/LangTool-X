@@ -5,7 +5,7 @@
 ### <p align="center">A command-line tool for extracting and converting game language files stored in binary `.dat` format.</p>
 
 ## About
-LangTool X processes language files stored in binary `.dat` format. These files are not human-readable and cannot be edited directly.
+#### LangTool X processes language files stored in binary `.dat` format. These files are not human-readable and cannot be edited directly.
 
 LangTool X allows you to:
 - Extract text strings from `.dat` files into a plain `.txt` format.
