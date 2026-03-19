@@ -252,7 +252,7 @@ MIT License. See [LICENSE](LICENSE).
 ## Credits
 
 - Developed by AS97.
-- **Inspired by the original "FO2 LangTool" developed by Burs.**
+- **Inspired by the original "FO2 LangTool" by Burs. This project is a clean, independent implementation.**
 - **Developed using the [Cursor](https://www.cursor.so/) editor with assistance from AI tools such as ChatGPT and Claude.**
 
 *Feel free to contribute or report issues via GitHub!*
