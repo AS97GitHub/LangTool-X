@@ -1,3 +1,0 @@
-# LangTool X Dependencies
-# No external dependencies required - only standard library modules used
-# PyInstaller is used for building the executable 
