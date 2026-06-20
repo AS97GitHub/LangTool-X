@@ -236,7 +236,7 @@ The compiled binary will be located in `./dist/langtool_x`
 ## Project Structure
 
 ```
-LangTool_X/Source/
+project/
     ├── langtool_x.py 
     └── modules/
         ├── convert.py
