@@ -69,7 +69,6 @@ LangTool X supports language files from these games:
 - Cross-platform CLI tool
 - No third-party Python dependencies.
 - Long and short command-line options
-- Validation and diagnostics
 
 ## Usage
 
