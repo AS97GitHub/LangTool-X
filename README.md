@@ -1,8 +1,22 @@
-<p align="center">
-  <img src="logo/logo2.png" width="300">
+<table>
+<tr>
+<td width="170">
+
+<p>
+  <img src="resources/icon.ico">
 </p>
 
-### <p align="center">A command-line tool for extracting and converting game language files stored in binary `.dat` format.</p>
+</td>
+<td>
+
+# FlatOut LangTool X
+
+### A command-line tool for extracting and converting game language files stored in binary `.dat` format.
+
+</td>
+</tr>
+</table>
+
 
 ## About
 #### LangTool X processes language files stored in binary `.dat` format. These files are not human-readable and cannot be edited directly.
